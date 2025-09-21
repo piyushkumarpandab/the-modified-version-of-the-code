@@ -1,0 +1,26 @@
+[
+  {
+    "id": "E-307",
+    "name": "E-307",
+    "type": "Theory",
+    "capacity": 60
+  },
+  {
+    "id": "E-211",
+    "name": "E-211",
+    "type": "Theory",
+    "capacity": 40
+  },
+  {
+    "id": "E-202",
+    "name": "E-202",
+    "type": "Skill",
+    "capacity": 30
+  },
+  {
+    "id": "E-203",
+    "name": "E-203",
+    "type": "Practical",
+    "capacity": 25
+  }
+]

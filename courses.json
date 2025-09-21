@@ -1,0 +1,38 @@
+[
+  {
+    "code": "DS101",
+    "name": "Basics of Data Science",
+    "credits": 5,
+    "type": "Theory"
+  },
+  {
+    "code": "DS102",
+    "name": "Introduction to C Programming",
+    "credits": 5,
+    "type": "Skill"
+  },
+  {
+    "code": "DS103",
+    "name": "Architecture and Operating Systems",
+    "credits": 5,
+    "type": "Theory"
+  },
+  {
+    "code": "DS104",
+    "name": "Linear Algebra and Basics of Calculus",
+    "credits": 5,
+    "type": "Practical"
+  },
+  {
+    "code": "DS105",
+    "name": "Data analysis using spreadsheets and VBA",
+    "credits": 3,
+    "type": "Skill"
+  },
+  {
+    "code": "DS106",
+    "name": "Banking",
+    "credits": 3,
+    "type": "Theory"
+  }
+]

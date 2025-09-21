@@ -1,0 +1,180 @@
+#timetable td b, #timetable td b[style] {
+  color: var(--text) !important;
+  font-weight: 600;
+}
+
+
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #f7f7fa;
+  --text: #232336;
+  --card: #fff;
+  --primary: #4f8cff;
+  --primary-hover: #2d6cdf;
+  --accent: #f76b1c;
+  --border: #e0e0e0;
+  --table-head: #f3f6fa;
+  --table-cell: #fff;
+  --break: #f5f5f5;
+  --lunch: #f0f0f0;
+  --conflict: #e53935;
+}
+
+[data-theme="dark"] {
+  --bg: #181a20;
+  --text: #f7f7fa;
+  --card: #232336;
+  --primary: #4f8cff;
+  --primary-hover: #2d6cdf;
+  --accent: #fda085;
+  --border: #232336;
+  --table-head: #232336;
+  --table-cell: #232336;
+  --break: #232336;
+  --lunch: #181a20;
+  --conflict: #ff6b6b;
+}
+
+
+/* Container and header styles assumed from previous UI */
+/* Minimal card container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: var(--card);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 36px 24px;
+  border: 1.5px solid var(--border);
+}
+header h1 {
+  color: var(--primary);
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.2em;
+}
+
+
+
+#startBtn, .primary-btn {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 10px 0;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+#startBtn:hover, .primary-btn:hover {
+  background: var(--primary-hover);
+}
+
+
+
+#timetable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 18px;
+}
+#timetable th {
+  background: var(--table-head);
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--border);
+  padding: 12px 0;
+}
+#timetable th:first-child, #timetable td:first-child {
+  background: transparent;
+  color: var(--text);
+  font-weight: 600;
+  text-align: left;
+  padding-left: 10px;
+}
+#timetable td {
+  background: var(--table-cell);
+  min-width: 110px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  position: relative;
+  font-size: 1.01rem;
+  border: 1px solid var(--border);
+  text-align: center;
+  padding: 10px 2px;
+  outline: none !important;
+}
+#timetable td:focus {
+  background: var(--table-head);
+  box-shadow: 0 0 0 2px var(--primary-hover);
+  outline: none !important;
+}
+#timetable td .faculty {
+  display: block;
+  font-size: 0.85em;
+  color: var(--accent);
+  margin-top: 4px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+/* Break/Lunch styling */
+#timetable td[contenteditable="false"] {
+  background: var(--break);
+  color: var(--primary);
+  font-weight: 600;
+}
+#timetable td[contenteditable="false"]:nth-child(odd) {
+  background: var(--lunch);
+}
+
+
+
+/* Minimal admin card */
+.admin-card {
+  background: var(--card);
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  padding: 18px 18px 10px 18px;
+  margin-bottom: 18px;
+  border: 1px solid var(--border);
+}
+
+/* Dark/light mode toggle button */
+.mode-toggle {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  background: var(--card);
+  color: var(--primary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  z-index: 10;
+}
+.mode-toggle:hover {
+  background: var(--primary);
+  color: #fff;
+}
+#timetable td b {
+  color: var(--text);
+  font-weight: 600;
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "F001",
+    "name": "Dr. Prashant Kulkarni",
+    "expertise": ["DS102"],
+    "availability": ["Mon", "Tue", "Wed", "Thu"]
+  },
+  {
+    "id": "F002",
+    "name": "Dr. Anita Khandizod",
+    "expertise": ["DS101", "DS105"],
+    "availability": ["Tue", "Wed", "Fri"]
+  },
+  {
+    "id": "F003",
+    "name": "Dr. Shubhangi Tidake",
+    "expertise": ["DS103"],
+    "availability": ["Mon", "Thu", "Fri"]
+  },
+  {
+    "id": "F004",
+    "name": "Dr. Vishnupant Potdar",
+    "expertise": ["DS104"],
+    "availability": ["Mon", "Tue", "Wed"]
+  },
+  {
+    "id": "F005",
+    "name": "Dr. Santosh Prabhakaran",
+    "expertise": ["DS106"],
+    "availability": ["Wed", "Thu", "Fri"]
+  }
+]
